@@ -1,16 +1,15 @@
 import './App.scss';
+import { PageWelcome } from './pages/PageWelcome';
+import { PageBooks } from './pages/PageBooks';
 
 function App() {
-		return (
-				<div className="App">
-						<h1>Info Site</h1>
-						<p>Welcome to this site.</p>
-						<p>Here is the image in the public directory referenced correctly:</p>
-						<hr />
-						<img src="images/bashCookbook.jpg" />
-						<hr />
-				</div>
-		);
+	return (
+		<div className="App">
+			<h1>Info Site</h1>
+			<PageWelcome />
+			<PageBooks />
+		</div>
+	);
 }
 
 export default App;
